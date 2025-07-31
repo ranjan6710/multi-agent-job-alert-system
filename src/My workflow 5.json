@@ -1,0 +1,544 @@
+{
+  "name": "My workflow 5",
+  "nodes": [
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ed40cb63-3e7c-48e9-93cd-6c8200e6b84c",
+              "leftValue": "={{ $json.relevance_score }}",
+              "rightValue": 40,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1696,
+        16
+      ],
+      "id": "327e71d0-ecb7-424f-9b79-0119a95b7030",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1a7RXpf-klF_tFNtlHHcF1uOFm8QTIJ8IxJltsCZzhq0",
+          "mode": "list",
+          "cachedResultName": "job alert database",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1a7RXpf-klF_tFNtlHHcF1uOFm8QTIJ8IxJltsCZzhq0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1a7RXpf-klF_tFNtlHHcF1uOFm8QTIJ8IxJltsCZzhq0/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "URL"
+          ],
+          "schema": [
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Title",
+              "displayName": "Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Company",
+              "displayName": "Company",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Location",
+              "displayName": "Location",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "relevence_Score",
+              "displayName": "relevence_Score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Match_Reasons",
+              "displayName": "Match_Reasons",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Match_Reasons",
+              "displayName": "Match_Reasons",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "URL",
+              "displayName": "URL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Source",
+              "displayName": "Source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "title",
+              "displayName": "title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "company",
+              "displayName": "company",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "location",
+              "displayName": "location",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "description",
+              "displayName": "description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "url",
+              "displayName": "url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "source",
+              "displayName": "source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "relevance_score",
+              "displayName": "relevance_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "match_reasons",
+              "displayName": "match_reasons",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "ai_summary",
+              "displayName": "ai_summary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "analyzed_at",
+              "displayName": "analyzed_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        2640,
+        -384
+      ],
+      "id": "16c90fd7-3380-422d-a09e-20f5bac7fbdd",
+      "name": "Append or update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "6fX9QX3J0y3wCHMK",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "ranjanyadav6709@gmail.com",
+        "subject": "=Job Alert: {{$json.title}} at {{$json.company}}",
+        "emailType": "text",
+        "message": "=🎯 New High-Match Job Found!  Job: {{$json.title}} Company: {{$json.company}} Location: {{$json.location}} Match Score: {{$json.relevance_score}}%  Why it matches: {{$json.match_reasons}}  AI Summary: {{$json.ai_summary}}  Apply here: {{$json.url}}  --- Powered by N8N Job Alert System",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2944,
+        -80
+      ],
+      "id": "34065281-fd77-43ac-85ca-fdf8245f9751",
+      "name": "Send a message",
+      "webhookId": "bbd86163-44cf-4fcb-bc77-c85d18bf9c74",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "fMB8B8rARZEg69mP",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://www.arbeitnow.com/api/job-board-api?search=python&location=remote",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        -96
+      ],
+      "id": "bbe954a1-72d1-43ad-ae14-c69ff70b6135",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Agent 1: Job Scraper\nconst agent1 = {\n  name: \"Agent 1 - Job Scraper\",\n  role: \"Data Collection\",\n  timestamp: new Date().toISOString()\n};\n\nconsole.log(`🤖 ${agent1.name}: Starting job scraping process`);\n\nconst jobs = [];\nfor (const item of $input.all()) {\n  const response = item.json;\n  \n  if (response.data && Array.isArray(response.data)) {\n    const jobsToProcess = response.data.slice(0, 8); // Limit for demo\n    \n    jobsToProcess.forEach((job, index) => {\n      if (job.title && job.company_name) {\n        jobs.push({\n          json: {\n            // Core job data\n            id: job.slug || `job_${Date.now()}_${index}`,\n            title: job.title,\n            company: job.company_name,\n            location: job.location || 'Remote',\n            description: job.description ? \n                         job.description.replace(/<[^>]*>/g, '').substring(0, 400) : \n                         'No description available',\n            url: job.url || `https://arbeitnow.com/jobs/${job.slug}`,\n            source: 'Arbeitnow',\n            \n            // Multi-agent tracking\n            processed_by: [agent1.name],\n            agent_chain: \"Agent1\",\n            batch_id: `batch_${Date.now()}`,\n            job_index: index,\n            scraped_at: agent1.timestamp,\n            current_agent: agent1.name\n          }\n        });\n      }\n    });\n  }\n}\n\nconsole.log(`✅ ${agent1.name}: Successfully scraped ${jobs.length} jobs → Passing to Agent 2`);\nreturn jobs;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        208
+      ],
+      "id": "55212259-507a-4a20-92c5-5dff32ee3cb3",
+      "name": "Agent1 scraper"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1-nano",
+          "mode": "list",
+          "cachedResultName": "GPT-4.1-NANO"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "You are Agent 2 - AI Analyzer in a multi-agent job processing system. Analyze this job for a Python developer with asyncio, API, and automation skills. Return ONLY valid JSON: {\"relevance_score\": 85, \"match_reasons\": [\"Python expertise\", \"Remote work\"], \"summary\": \"Great match for your skills\", \"agent_id\": \"Agent_2\", \"confidence\": \"high\"}",
+              "role": "system"
+            },
+            {
+              "content": "=🤖 Multi-Agent Processing Chain: {{$json.agent_chain}}\nProcessed by: {{$json.processed_by}}\nBatch: {{$json.batch_id}}\n\nJob Analysis Request:\nTitle: {{$json.title}}\nCompany: {{$json.company}}\nLocation: {{$json.location}}\nDescription: {{$json.description}}\n\nTarget Skills: Python, Asyncio, API Development, N8N Automation, Telegram Bots, Web Development"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1136,
+        160
+      ],
+      "id": "4664d607-bf1a-466c-9ad2-a47ca281039e",
+      "name": "AI analyser",
+      "credentials": {
+        "openAiApi": {
+          "id": "SJ4P0CMlrnlF9c5w",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Agent 3: AI Response Parser & Data Enricher\nconst agent3 = {\n  name: \"Agent 3 - Response Parser\",\n  role: \"AI Analysis Processing\",\n  timestamp: new Date().toISOString()\n};\n\nconsole.log(`🤖 ${agent3.name}: Processing AI analysis results`);\n\nconst enrichedJobs = [];\n\n// Get the original job data from the HTTP Request node (Arbeitnow API)\nconst originalApiData = $('HTTP Request').all();\nlet jobsFromApi = [];\n\n// Extract jobs from API response\nif (originalApiData.length > 0 && originalApiData[0].json.data) {\n  jobsFromApi = originalApiData[0].json.data.slice(0, 8);\n}\n\n// Process each AI response with corresponding job data\nfor (let i = 0; i < $input.all().length; i++) {\n  const aiResponse = $input.all()[i];\n  const originalJob = jobsFromApi[i]; // Get corresponding job from API\n  \n  let aiAnalysis = {};\n  \n  // Parse AI response\n  try {\n    if (aiResponse.json.choices && aiResponse.json.choices[0]) {\n      const aiContent = aiResponse.json.choices[0].message.content;\n      const cleanContent = aiContent.replace(/```json|```/g, '').trim();\n      aiAnalysis = JSON.parse(cleanContent);\n    }\n  } catch (error) {\n    console.log(`⚠️ ${agent3.name}: AI parsing error for job ${i}, using fallback`);\n    aiAnalysis = {\n      relevance_score: 65,\n      match_reasons: [\"Analysis failed - needs manual review\"],\n      summary: \"AI analysis encountered an error\",\n      agent_id: \"Agent_3_Fallback\",\n      confidence: \"low\"\n    };\n  }\n  \n  // Combine original job data with AI analysis\n  if (originalJob) {\n    const enrichedJob = {\n      // Original job data from API\n      id: originalJob.slug || `job_${Date.now()}_${i}`,\n      title: originalJob.title || 'Unknown Title',\n      company: originalJob.company_name || 'Unknown Company',\n      location: originalJob.location || 'Remote',\n      description: originalJob.description ? \n                   originalJob.description.replace(/<[^>]*>/g, '').substring(0, 400) : \n                   'No description available',\n      url: originalJob.url || `https://arbeitnow.com/jobs/${originalJob.slug}`,\n      source: 'Arbeitnow',\n      \n      // AI Analysis Results\n      relevance_score: aiAnalysis.relevance_score || 50,\n      match_reasons: aiAnalysis.match_reasons || ['No analysis available'],\n      ai_summary: aiAnalysis.summary || 'No AI summary',\n      ai_confidence: aiAnalysis.confidence || 'unknown',\n      \n      // Agent Chain Tracking\n      processed_by: ['Agent 1 - Scraper', 'Agent 2 - AI Analyzer', agent3.name],\n      agent_chain: 'Agent1 → Agent2 → Agent3',\n      analyzed_at: agent3.timestamp,\n      current_agent: agent3.name,\n      processing_stage: \"AI_ANALYZED\",\n      job_index: i\n    };\n    \n    enrichedJobs.push({ json: enrichedJob });\n  }\n}\n\nconsole.log(`✅ ${agent3.name}: Enriched ${enrichedJobs.length} unique jobs with AI analysis → Passing to Agent 4`);\nreturn enrichedJobs;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1488,
+        16
+      ],
+      "id": "151fb8ce-4d6a-44db-b8c1-6fab5a3890fa",
+      "name": "Agent3"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Agent 4: Smart Filter & Quality Control\nconst agent4 = {\n  name: \"Agent 4 - Quality Filter\",\n  role: \"Quality Control & Prioritization\",\n  timestamp: new Date().toISOString()\n};\n\nconsole.log(`🤖 ${agent4.name}: Processing high-quality job matches`);\n\nconst qualityJobs = [];\n\nfor (const item of $input.all()) {\n  const job = item.json;\n  \n  // Agent 4 quality enhancements\n  const qualityJob = {\n    ...job,\n    \n    // Priority Classification\n    priority_level: job.relevance_score >= 90 ? 'URGENT' : \n                   job.relevance_score >= 80 ? 'HIGH' : 'MEDIUM',\n    alert_type: job.relevance_score >= 85 ? 'IMMEDIATE' : 'BATCH',\n    quality_grade: job.relevance_score >= 85 ? 'A+' : \n                   job.relevance_score >= 75 ? 'A' : 'B+',\n    \n    // Agent Chain Tracking\n    processed_by: [...job.processed_by, agent4.name],\n    agent_chain: job.agent_chain + ' → Agent4',\n    filtered_at: agent4.timestamp,\n    current_agent: agent4.name,\n    processing_stage: \"QUALITY_APPROVED\",\n    \n    // Quality Metrics\n    match_strength: job.match_reasons.length >= 3 ? 'STRONG' : 'MODERATE',\n    recommendation: job.relevance_score >= 80 ? 'HIGHLY_RECOMMENDED' : 'RECOMMENDED'\n  };\n  \n  qualityJobs.push({ json: qualityJob });\n}\n\nconsole.log(`✅ ${agent4.name}: Approved ${qualityJobs.length} premium job matches → Passing to Agent 5`);\nreturn qualityJobs;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1904,
+        -80
+      ],
+      "id": "b87d394e-a661-4c39-ac0e-fc7866c808bb",
+      "name": "agent 4"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Agent 4: Smart Filter & Quality Control (Adjusted for realistic scores)\nconst agent4 = {\n  name: \"Agent 4 - Quality Filter\",\n  role: \"Quality Control & Prioritization\",\n  timestamp: new Date().toISOString()\n};\n\nconsole.log(`🤖 ${agent4.name}: Processing job matches with realistic scoring`);\n\nconst qualityJobs = [];\n\nfor (const item of $input.all()) {\n  const job = item.json;\n  \n  const qualityJob = {\n    ...job,\n    \n    // Realistic Priority Classification\n    priority_level: job.relevance_score >= 60 ? 'HIGH' : \n                   job.relevance_score >= 45 ? 'MEDIUM' : 'STANDARD',\n    alert_type: job.relevance_score >= 50 ? 'IMMEDIATE' : 'BATCH',\n    quality_grade: job.relevance_score >= 55 ? 'A' : \n                   job.relevance_score >= 40 ? 'B+' : 'B',\n    \n    // Recommendation based on realistic scores\n    recommendation: job.relevance_score >= 50 ? 'RECOMMENDED' : \n                   job.relevance_score >= 35 ? 'WORTH_REVIEWING' : 'CONSIDER',\n    \n    // Agent Chain Tracking\n    processed_by: [...job.processed_by, agent4.name],\n    agent_chain: job.agent_chain + ' → Agent4',\n    filtered_at: agent4.timestamp,\n    current_agent: agent4.name,\n    processing_stage: \"QUALITY_APPROVED\"\n  };\n  \n  qualityJobs.push({ json: qualityJob });\n}\n\nconsole.log(`✅ ${agent4.name}: Approved ${qualityJobs.length} jobs (35%+ relevance) → Passing to Agent 5`);\nreturn qualityJobs;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2112,
+        -80
+      ],
+      "id": "8c2fde2d-5a10-478f-bc41-a3d7dcb04590",
+      "name": "alert manager"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Agent 5: Alert Manager (Optimized for realistic relevance scores)\nconst agent5 = {\n  name: \"Agent 5 - Alert Manager\",\n  role: \"Notification & System Monitoring\",\n  timestamp: new Date().toISOString()\n};\n\nconst jobs = $input.all();\nconsole.log(`🤖 ${agent5.name}: Managing alerts for ${jobs.length} opportunities`);\n\nconst finalJobs = jobs.map(item => {\n  const job = item.json;\n  \n  // Smart alert messaging based on score\n  let scoreMessage = \"\";\n  if (job.relevance_score >= 50) {\n    scoreMessage = \"🔥 Strong Match!\";\n  } else if (job.relevance_score >= 40) {\n    scoreMessage = \"✨ Good Potential!\";\n  } else {\n    scoreMessage = \"💡 Worth Exploring!\";\n  }\n  \n  return {\n    json: {\n      ...job,\n      \n      // Realistic Alert Content\n      alert_subject: `🤖 ${scoreMessage} ${job.title} at ${job.company} (${job.relevance_score}%)`,\n      \n      alert_body: `🚀 MULTI-AGENT JOB ALERT SYSTEM\n\n${scoreMessage} - ${job.relevance_score}% Match\n\n🔗 Agent Processing: ${job.agent_chain}\n🎯 Assessment: ${job.quality_grade} Grade | ${job.priority_level} Priority\n📊 Status: ${job.recommendation}\n\n💼 OPPORTUNITY DETAILS:\n📋 Position: ${job.title}\n🏢 Company: ${job.company}\n📍 Location: ${job.location}\n⭐ Match Score: ${job.relevance_score}% relevance\n\n🎯 MATCH ANALYSIS:\n${job.match_reasons.map(reason => `• ${reason}`).join('\\n')}\n\n🤖 AI INSIGHTS: \n${job.ai_summary}\n\n🔗 EXPLORE OPPORTUNITY: ${job.url}\n\n💡 RECOMMENDATION: ${job.relevance_score >= 45 ? \n    'This role shows good alignment with your skills!' : \n    'Consider reviewing - might have growth potential!'}\n\n───────────────────────────────\n✅ Processed by 5 specialized agents\n🤖 Multi-Agent System: Fully operational!`,\n      \n      // Final tracking\n      processed_by: [...job.processed_by, agent5.name],\n      agent_chain: job.agent_chain + ' → Agent5',\n      final_processing_time: agent5.timestamp,\n      \n      // Email priority based on score\n      email_priority: job.relevance_score >= 50 ? 'high' : 'normal'\n    }\n  };\n});\n\nconsole.log(`✅ ${agent5.name}: ${finalJobs.length} tailored alerts prepared!`);\nreturn finalJobs;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2320,
+        -80
+      ],
+      "id": "62628144-c439-4c81-91f0-5e71a9e15ffa",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "multiagent-trigger",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -16,
+        576
+      ],
+      "id": "59ca93a5-0cc3-4464-acb4-b1a7649e795e",
+      "name": "Webhook",
+      "webhookId": "a340b67f-dda2-41d4-b728-2163cccfa1ed"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "If": {
+      "main": [
+        [
+          {
+            "node": "agent 4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append or update row in sheet": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Agent1 scraper",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agent1 scraper": {
+      "main": [
+        [
+          {
+            "node": "AI analyser",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI analyser": {
+      "main": [
+        [
+          {
+            "node": "Agent3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agent3": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "agent 4": {
+      "main": [
+        [
+          {
+            "node": "alert manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "alert manager": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "4001475d-5a8d-4041-aead-0372901edd7e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "708df87be92b13f841361b8d40e805a0094baf5376b6bcc4a44d26dfd6481216"
+  },
+  "id": "c6lGoPlljqh90REZ",
+  "tags": []
+}
